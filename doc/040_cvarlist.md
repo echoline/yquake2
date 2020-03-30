@@ -97,6 +97,13 @@ it's `+set busywait 0` (setting the `busywait` cvar) and `-portable`
   disable it again before playing Ground Zero maps in co-op. By
   default this cvar is disabled (set to 0).
 
+* **coop_pickup_weapons**: In coop a weapon can be picked up only once.
+  For example, if the player already has the shotgun they cannot pickup
+  a second shotgun found at a later time, thus not getting the ammo that
+  comes with it. This breaks the balacing. If set to `1` a weapon can be
+  picked up if a) the player doesn't have it or b) it wasn't already
+  picked up by another player. Defaults to `0`.
+
 ## Audio
 
 * **al_device**: OpenAL device to use. In most cases there's no need to
